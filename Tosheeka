@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tosheeka Dhansa - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Tosheeka Dhansa</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-content">
+      <h1>Awaken to a World of Possibilities</h1>
+      <p>Explore my work in Analytics, Reporting, and Automation</p>
+      <button><a href="#projects">View Projects</a></button>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated professional with a degree in Financial Mathematics and currently pursuing an MSc in Financial Analysis. With over 3 years of experience in data analysis and process automation, I bring a strong analytical foundation combined with a passion for technology and innovation. Over the past 3 years I have proactively learned and applied a wide range of tools to support data analysis, streamline processes, and drive digital transformation. I have successfully contributed to multiple initiatives aimed at improving efficiency and supporting organizational growth by automating key workflows and delivering data-driven solutions.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fas fa-chart-line"></i>
+        <h3>Analytics</h3>
+        <p>Power BI, SQL, SAP Analytics Cloud, Python, VBA</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-book"></i>
+        <h3>Reporting</h3>
+        <p>Power BI Dashboards, Excel Reports, Data Modeling</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-robot"></i>
+        <h3>Automation</h3>
+        <p>Power Automate, VBA, Process Automation Solutions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Power BI Dashboard</h3>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h3>SQL Query Optimization</h3>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Power Automate Workflows</h3>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you're interested in working with me or want to learn more about my projects, feel free to get in touch!</p>
+    <form action="mailto:tosheeka@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Tosheeka Dhansa. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #1d1f27;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0d1b2a;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+header {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header button {
+  background-color: #4f79c4;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+header button a {
+  color: #fff;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill i {
+  font-size: 3rem;
+  color: #4f79c4;
+  margin-bottom: 10px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: #2e3c49;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.project a {
+  font-size: 1rem;
+  color: #4f79c4;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #3e4a59;
+  border: none;
+  color: #fff;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4f79c4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #0d1b2a;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
