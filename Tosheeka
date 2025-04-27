@@ -4,233 +4,207 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tosheeka Dhansa - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+      position: relative;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    /* Header */
+    header {
+      background: #34495e;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 0;
+    }
+
+    /* Navigation */
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 14px 20px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #2980b9;
+      border-radius: 4px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Profile Section */
+    .profile {
+      text-align: center;
+      padding-bottom: 40px;
+      position: relative;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 4px solid #3498db;
+    }
+    .profile h2 {
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+    .profile p {
+      font-size: 1.2em;
+      color: #7f8c8d;
+    }
+
+    /* Background Icons */
+    .background-icons {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0.1;
+      pointer-events: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .background-icons i {
+      color: #2980b9;
+      font-size: 50px;
+      margin: 20px;
+    }
+
+    /* Project Section */
+    .section {
+      margin-top: 60px;
+    }
+    .projects-btns {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .project-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .project-btn:hover {
+      background-color: #2980b9;
+    }
+
+    /* Contact Section */
+    .contact-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #3498db;
+      color: white;
+      font-size: 1.1em;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-top: 30px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .contact-btn:hover {
+      background-color: #2980b9;
+    }
+
+  </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Tosheeka Dhansa</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Hero Section -->
-  <header id="hero">
-    <div class="hero-content">
-      <h1>Awaken to a World of Possibilities</h1>
-      <p>Explore my work in Analytics, Reporting, and Automation</p>
-      <button><a href="#projects">View Projects</a></button>
-    </div>
-  </header>
+<header>
+  <h1>Tosheeka Dhansa</h1>
+  <p>Business Intelligence | Data Automation | App Development</p>
+</header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a dedicated professional with a degree in Financial Mathematics and currently pursuing an MSc in Financial Analysis. With over 3 years of experience in data analysis and process automation, I bring a strong analytical foundation combined with a passion for technology and innovation. Over the past 3 years I have proactively learned and applied a wide range of tools to support data analysis, streamline processes, and drive digital transformation. I have successfully contributed to multiple initiatives aimed at improving efficiency and supporting organizational growth by automating key workflows and delivering data-driven solutions.</p>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <i class="fas fa-chart-line"></i>
-        <h3>Analytics</h3>
-        <p>Power BI, SQL, SAP Analytics Cloud, Python, VBA</p>
-      </div>
-      <div class="skill">
-        <i class="fas fa-book"></i>
-        <h3>Reporting</h3>
-        <p>Power BI Dashboards, Excel Reports, Data Modeling</p>
-      </div>
-      <div class="skill">
-        <i class="fas fa-robot"></i>
-        <h3>Automation</h3>
-        <p>Power Automate, VBA, Process Automation Solutions</p>
-      </div>
-    </div>
+<div class="container">
+
+  <!-- Background Icons (Linked to your profession) -->
+  <div class="background-icons">
+    <i class="fas fa-chart-line"></i>
+    <i class="fas fa-laptop-code"></i>
+    <i class="fas fa-cogs"></i>
+    <i class="fas fa-database"></i>
+    <i class="fas fa-palette"></i>
+    <i class="fas fa-robot"></i>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about" class="profile">
+    <img src="link_to_your_photo.jpg" alt="Profile Picture">
+    <h2>Tosheeka Dhansa</h2>
+    <p>I'm a passionate BI Developer and Automation Expert, working with tools like Power BI, Power Apps, Power Automate, Python, SQL, Advanced Excel, and SAP Analytics Cloud to create intelligent solutions to real business problems.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>Power BI Dashboard</h3>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h3>SQL Query Optimization</h3>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Power Automate Workflows</h3>
-        <a href="#">View Project</a>
-      </div>
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="projects-btns">
+      <a href="link_to_project1" class="project-btn">Power BI Dashboard</a>
+      <a href="link_to_project2" class="project-btn">Power Apps Solution</a>
+      <a href="link_to_project3" class="project-btn">Power Automate Workflow</a>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>If you're interested in working with me or want to learn more about my projects, feel free to get in touch!</p>
-    <form action="mailto:tosheeka@email.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Interested in collaborating or discussing a project? Feel free to reach out!</p>
+    <a href="mailto:your_email@example.com" class="contact-btn">Email Me</a>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Tosheeka Dhansa. All Rights Reserved.</p>
-  </footer>
+</div>
 
-  <script src="script.js"></script>
 </body>
 </html>
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  background-color: #1d1f27;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #0d1b2a;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  font-size: 1.1rem;
-  color: #fff;
-}
-
-header {
-  background: #0d1b2a;
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-header button {
-  background-color: #4f79c4;
-  padding: 10px 20px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1rem;
-}
-
-header button a {
-  color: #fff;
-}
-
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.skill {
-  text-align: center;
-}
-
-.skill i {
-  font-size: 3rem;
-  color: #4f79c4;
-  margin-bottom: 10px;
-}
-
-.project-list {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.project {
-  background-color: #2e3c49;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  text-align: center;
-}
-
-.project a {
-  font-size: 1rem;
-  color: #4f79c4;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #3e4a59;
-  border: none;
-  color: #fff;
-}
-
-form button {
-  padding: 10px 20px;
-  background-color: #4f79c4;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-footer {
-  background-color: #0d1b2a;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  font-size: 1rem;
-}
